@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Smart Bazaaar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+    <script src="common.js"></script>
+    <script src="dashboard.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">Smart Bazaaar</a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <!-- Navigation -->
+        <nav id="mainNav">
+
+            <a href="index.html">Home</a>
+
+            <a class="active" href="dashboard.html">Dashboard</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="cart.html">
+                Cart
+                <span class="cart-count" id="navCartCount">0</span>
+            </a>
+
+            <a href="admin.html">Admin</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="page-container">
+
+        <!-- Page Heading -->
+        <section class="page-heading">
+
+            <span class="eyebrow">OVERVIEW</span>
+
+            <h1>Dashboard</h1>
+
+            <p>
+                Welcome to your Smart Bazaaar dashboard.
+                Manage and monitor your shopping activities.
+            </p>
+
+        </section>
+
+
+        <!-- Statistics Cards -->
+        <section class="stats-grid">
+
+            <!-- Total Products -->
+            <div class="stat-card">
+
+                <span class="stat-icon">📦</span>
+
+                <h3>Total Products</h3>
+
+                <h2 id="totalProducts">0</h2>
+
+            </div>
+
+
+            <!-- Total Categories -->
+            <div class="stat-card">
+
+                <span class="stat-icon">🗂️</span>
+
+                <h3>Total Categories</h3>
+
+                <h2 id="totalCategories">0</h2>
+
+            </div>
+
+
+            <!-- Cart Items -->
+            <div class="stat-card">
+
+                <span class="stat-icon">🛒</span>
+
+                <h3>Cart Items</h3>
+
+                <h2 id="totalCartItems">0</h2>
+
+            </div>
+
+
+            <!-- Cart Value -->
+            <div class="stat-card">
+
+                <span class="stat-icon">💰</span>
+
+                <h3>Cart Value</h3>
+
+                <h2 id="totalCartValue">৳0</h2>
+
+            </div>
+
+
+            <!-- Total Sales -->
+            <div class="stat-card">
+
+                <span class="stat-icon">💵</span>
+
+                <h3>Total Sales</h3>
+
+                <h2 id="totalSales">৳0.00</h2>
+
+            </div>
+
+
+            <!-- Sold Items -->
+            <div class="stat-card">
+
+                <span class="stat-icon">🛍️</span>
+
+                <h3>Sold Items</h3>
+
+                <h2 id="totalSoldItems">0</h2>
+
+            </div>
+
+
+            <!-- Total Quantity -->
+            <div class="stat-card">
+
+                <span class="stat-icon">📊</span>
+
+                <h3>Total Quantity</h3>
+
+                <h2 id="totalQuantity">0</h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Products -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        LATEST COLLECTION
+                    </span>
+
+                    <h2>Recent Products</h2>
+
+                </div>
+
+                <a href="products.html" class="text-link">
+                    View Products →
+                </a>
+
+            </div>
+
+            <div class="product-grid" id="recentProducts">
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+
+            <h2>Quick Actions</h2>
+
+            <div class="action-grid">
+
+                <a href="products.html" class="action-card">
+
+                    <span>🛍️</span>
+
+                    <h3>Browse Products</h3>
+
+                    <p>Explore available products.</p>
+
+                </a>
+
+
+                <a href="cart.html" class="action-card">
+
+                    <span>🛒</span>
+
+                    <h3>View Cart</h3>
+
+                    <p>Check your selected products.</p>
+
+                </a>
+
+
+                <a href="admin.html" class="action-card">
+
+                    <span>⚙️</span>
+
+                    <h3>Admin Panel</h3>
+
+                    <p>Manage products and inventory.</p>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Smart Bazaaar · Shopping Management System
+        </p>
+
+        <p>
+            email : work.sohanur@gmail.com
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="data.js"></script>
+
+    <script src="common.js"></script>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
