@@ -1,5 +1,6 @@
 
 // Smart Bazaaar Common JavaScript
+// revised common function
 
 const CART_KEY = "sms_cart";
 
