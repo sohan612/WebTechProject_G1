@@ -1,4 +1,4 @@
-
+// admin java script
 document.addEventListener("DOMContentLoaded", function() {
 
     let productForm = document.getElementById("productForm");
