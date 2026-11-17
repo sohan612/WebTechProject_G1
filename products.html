@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Smart Bazaaar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">Smart Bazaaar</a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <!-- Navigation -->
+        <nav id="mainNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="dashboard.html">Dashboard</a>
+
+            <a class="active" href="products.html">Products</a>
+
+            <a href="cart.html">
+                Cart
+                <span class="cart-count" id="navCartCount">0</span>
+            </a>
+
+            <a href="admin.html">Admin</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="page-container">
+
+        <!-- Page Heading -->
+        <section class="page-heading">
+
+            <span class="eyebrow">OUR COLLECTION</span>
+
+            <h1>All Products</h1>
+
+            <p>
+                Explore our collection and find
+                your favorite products.
+            </p>
+
+        </section>
+
+
+        <!-- Search and Filter -->
+        <section class="product-controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+       <select id="categoryFilter">
+
+         <option value="All">All Categories</option>
+
+        <option value="Electronics">Electronics</option>
+
+         <option value="Food">Food</option>
+
+        <option value="Clothing">Clothing</option>
+
+         <option value="Accessories">Accessories</option>
+
+         <option value="Others">Others</option>
+
+</select>
+
+        </section>
+
+
+        <!-- Product Count -->
+        <div class="product-result">
+
+            <p>
+                Showing <span id="productCount">0</span> Products
+            </p>
+
+        </div>
+
+
+        <!-- Products -->
+        <section class="section">
+
+            <div class="product-grid" id="allProducts">
+
+            </div>
+
+            <p id="noProducts" class="no-products">
+                No products found.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Smart Bazaaar · Shopping Management System
+        </p>
+
+        <p>
+            email : work.sohanur@gmail.com
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="data.js"></script>
+
+    <script src="common.js"></script>
+
+    <script src="products.js"></script>
+
+</body>
+
+</html>
