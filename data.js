@@ -1,5 +1,6 @@
 
 // Smart Bazaaar Product Database
+// checked 2x
 
 let defaultProducts = [
 
