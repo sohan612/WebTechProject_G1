@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Smart Bazaaar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <div class="login-container">
+
+            <div class="login-header">
+                <h1>Smart Bazaaar</h1>
+                <p>Shopping Management System</p>
+                <span>Welcome! Please select your account type.</span>
+            </div>
+
+            <!-- Account Selection -->
+            <div class="login-options" id="accountSelection">
+
+                <div class="login-card">
+
+                    <div class="login-icon">👨‍💼</div>
+
+                    <h2>Admin</h2>
+
+                    <p>Access the complete management system.</p>
+
+                    <button type="button" onclick="showSection('adminLogin')">
+                        Login as Admin
+                    </button>
+
+                </div>
+
+                <div class="login-card">
+
+                    <div class="login-icon">🛍️</div>
+
+                    <h2>Customer</h2>
+
+                    <p>Login or create an account to start shopping.</p>
+
+                    <button type="button" onclick="showSection('customerLogin')">
+                        Login as Customer
+                    </button>
+
+                    <button type="button" class="secondary-button"
+                        onclick="showSection('customerRegister')">
+                        Create Account
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Admin Login -->
+            <div class="auth-form" id="adminLogin" style="display:none;">
+
+                <h2>Admin Login</h2>
+
+                <form id="adminLoginForm">
+
+                    <input type="text" id="adminId"
+                        placeholder="Admin User ID" required>
+
+                    <input type="password" id="adminPassword"
+                        placeholder="Admin Password" required>
+
+                    <button type="submit">Login</button>
+
+                    <p class="message" id="adminMessage"></p>
+
+                </form>
+
+                <button class="back-button" onclick="showSection('accountSelection')">
+                    Back
+                </button>
+
+            </div>
+
+
+            <!-- Customer Login -->
+            <div class="auth-form" id="customerLogin" style="display:none;">
+
+                <h2>Customer Login</h2>
+
+                <form id="customerLoginForm">
+
+                    <input type="text" id="customerLoginId"
+                        placeholder="User ID" required>
+
+                    <input type="password" id="customerLoginPassword"
+                        placeholder="Password" required>
+
+                    <button type="submit">Login</button>
+
+                    <p class="message" id="customerLoginMessage"></p>
+
+                </form>
+
+                <p class="switch-text">
+                    Don't have an account?
+                    <a href="#" onclick="showSection('customerRegister'); return false;">
+                        Register Now
+                    </a>
+                </p>
+
+                <button class="back-button" onclick="showSection('accountSelection')">
+                    Back
+                </button>
+
+            </div>
+
+
+            <!-- Customer Registration -->
+            <div class="auth-form" id="customerRegister" style="display:none;">
+
+                <h2>Create Customer Account</h2>
+
+                <form id="customerRegisterForm">
+
+                    <input type="text" id="registerName"
+                        placeholder="Full Name" required>
+
+                    <input type="text" id="registerUserId"
+                        placeholder="Create User ID" required>
+
+                    <input type="email" id="registerEmail"
+                        placeholder="Email Address" required>
+
+                    <input type="password" id="registerPassword"
+                        placeholder="Create Password" required>
+
+                    <input type="password" id="confirmPassword"
+                        placeholder="Confirm Password" required>
+
+                    <button type="submit">Register</button>
+
+                    <p class="message" id="registerMessage"></p>
+
+                </form>
+
+                <p class="switch-text">
+                    Already have an account?
+                    <a href="#" onclick="showSection('customerLogin'); return false;">
+                        Login
+                    </a>
+                </p>
+
+                <button class="back-button" onclick="showSection('accountSelection')">
+                    Back
+                </button>
+
+            </div>
+
+
+            <div class="login-footer">
+                <p>© 2026 Smart Bazaaar · Shopping Management System</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
