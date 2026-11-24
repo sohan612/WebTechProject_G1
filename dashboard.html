@@ -12,6 +12,13 @@
     <script src="data.js"></script>
     <script src="common.js"></script>
     <script src="dashboard.js"></script>
+    
+    <script src="access.js"></script>
+    <script>
+    if (!checkAdmin()) {
+        window.stop();
+    }
+</script>
 </head>
 
 <body>
