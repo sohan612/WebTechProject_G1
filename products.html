@@ -9,6 +9,9 @@
     <title>Products | Smart Bazaaar</title>
 
     <link rel="stylesheet" href="style.css">
+    
+    <script src="access.js"></script>
+    <script>checkCustomer();</script>
 </head>
 
 <body>
@@ -16,7 +19,7 @@
     <!-- Header -->
     <header class="site-header">
 
-        <a class="brand" href="index.html">Smart Bazaaar</a>
+        <a class="brand" href="login.html">Smart Bazaaar</a>
 
         <button class="menu-toggle" id="menuToggle">
             ☰
@@ -25,18 +28,15 @@
         <!-- Navigation -->
         <nav id="mainNav">
 
-            <a href="index.html">Home</a>
+            <a href="index.html" onclick="return checkAdmin()">Home</a>
 
-            <a href="dashboard.html">Dashboard</a>
+             <a href="dashboard.html" onclick="return checkAdmin()">Dashboard</a>
 
-            <a class="active" href="products.html">Products</a>
+            <a href="products.html">Products</a>
 
-            <a href="cart.html">
-                Cart
-                <span class="cart-count" id="navCartCount">0</span>
-            </a>
+             <a href="cart.html">Cart</a>
 
-            <a href="admin.html">Admin</a>
+            <a href="admin.html" onclick="return checkAdmin()">Admin</a>
 
         </nav>
 
