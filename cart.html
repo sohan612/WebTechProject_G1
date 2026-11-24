@@ -11,6 +11,9 @@
     <script src="data.js" defer></script>
     <script src="common.js" defer></script>
     <script src="cart.js" defer></script>
+    
+    <script src="access.js"></script>
+    <script>checkCustomer();</script>
 </head>
 
 <body>
@@ -19,11 +22,11 @@
         <h1>Shopping Management System</h1>
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="products.html">Products</a>
-            <a href="cart.html">Cart</a>
-            <a href="admin.html">Admin</a>
+        <a href="index.html" onclick="return checkAdmin()">Home</a>
+        <a href="dashboard.html" onclick="return checkAdmin()">Dashboard</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="admin.html" onclick="return checkAdmin()">Admin</a>
         </nav>
     </header>
 
