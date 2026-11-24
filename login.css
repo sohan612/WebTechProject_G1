@@ -1,0 +1,213 @@
+/* ================================
+   Smart Bazaaar Login Page
+================================ */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: #f5f7fb;
+    box-sizing: border-box;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 850px;
+    padding: 40px 30px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.login-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.login-header p {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.login-header span {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Account Selection */
+
+.login-options {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.login-card {
+    width: 300px;
+    padding: 30px 25px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.login-card h2 {
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.login-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 65px;
+    margin-bottom: 22px;
+}
+
+/* Buttons */
+
+.login-card button,
+.auth-form button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-card button:hover,
+.auth-form button:hover {
+    background: #444;
+}
+
+.login-card .secondary-button {
+    margin-top: 12px;
+    background: #eef0f4;
+    color: #222;
+}
+
+.login-card .secondary-button:hover {
+    background: #dfe3e9;
+}
+
+/* Login and Registration Forms */
+
+.auth-form {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.auth-form h2 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.auth-form input {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.auth-form input:focus {
+    border-color: #555;
+}
+
+.auth-form form button {
+    margin-top: 5px;
+}
+
+.message {
+    min-height: 20px;
+    margin: 12px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.switch-text {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.switch-text a {
+    color: #222;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+
+.auth-form .back-button {
+    margin-top: 12px;
+    background: #eef0f4;
+    color: #222;
+}
+
+.auth-form .back-button:hover {
+    background: #dfe3e9;
+}
+
+/* Footer */
+
+.login-footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .login-container {
+        padding: 30px 20px;
+    }
+
+    .login-header h1 {
+        font-size: 26px;
+    }
+
+    .login-card {
+        width: 100%;
+    }
+
+}
