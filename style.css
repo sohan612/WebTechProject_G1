@@ -1193,3 +1193,21 @@ td {
 /* all the css are checked */
 /*again checked*/
 
+
+/* Exit Button - Same as Navigation Links */
+#mainNav button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+#mainNav button:hover {
+    color: #e74c3c;
+}
+
+
